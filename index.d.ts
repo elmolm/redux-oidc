@@ -23,6 +23,7 @@ declare module "redux-oidc" {
     readonly successCallback: (user: User) => void;
     readonly errorCallback?: (error: Error) => void;
     readonly route?: string;
+    children: React.ReactNode;
   }
 
   export class CallbackComponent extends React.Component<
