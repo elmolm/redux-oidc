@@ -29,9 +29,6 @@
   "author": "Maximilian Mantz",
   "license": "MIT",
   "devDependencies": {
-    "react": ">=18.0.0",
-    "prop-types": ">=15.5.8",
-    "oidc-client-ts": ">=1.6.1",
     "babel-core": "^6.21.0",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.10",
@@ -61,6 +58,11 @@
     "webpack": "^2.2.0",
     "redux": "^4.2.1",
     "webpack-node-externals": "^1.5.4"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "prop-types": ">=15.5.8",
+    "oidc-client-ts": ">=1.6.1"
   },
   "optionalDependencies": {
     "immutable": ">=3.6.0"
