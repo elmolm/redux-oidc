@@ -2,6 +2,12 @@
   "name": "redux-oidc",
   "version": "4.0.0",
   "description": "A package for managing OpenID Connect authentication in redux apps",
+  "author": "Maximilian Mantz",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxmantz/redux-oidc.git"
+  },
   "main": "dist/redux-oidc.js",
   "types": "./index.d.ts",
   "scripts": {
@@ -9,14 +15,6 @@
     "build": "webpack -p",
     "prepublish": "npm run test",
     "pretest": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/maxmantz/redux-oidc.git"
-  },
-  "bugs": {
-    "url": "https://github.com/maxmantz/redux-oidc/issues",
-    "email": "maximilian.mantz@yahoo.de"
   },
   "keywords": [
     "oidc",
@@ -26,8 +24,6 @@
     "openid",
     "oauth2"
   ],
-  "author": "Maximilian Mantz",
-  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-eslint": "^7.1.1",
@@ -54,15 +50,18 @@
     "mocha": "^3.2.0",
     "mocha-webpack": "^0.7.0",
     "node-storage-shim": "^1.0.1",
+    "oidc-client-ts": ">=1.6.1",
+    "prop-types": ">=15.5.8",
+    "react": ">=18.0.0",
+    "redux": "^4.2.1",
     "sinon": "^1.17.7",
     "webpack": "^2.2.0",
-    "redux": "^4.2.1",
     "webpack-node-externals": "^1.5.4"
   },
   "peerDependencies": {
-    "react": ">=18.0.0",
+    "oidc-client-ts": ">=1.6.1",
     "prop-types": ">=15.5.8",
-    "oidc-client-ts": ">=1.6.1"
+    "react": ">=18.0.0"
   },
   "optionalDependencies": {
     "immutable": ">=3.6.0"
@@ -71,5 +70,6 @@
     "transform": [
       "reactify"
     ]
-  }
+  },
+  "packageManager": "yarn@4.4.0"
 }
